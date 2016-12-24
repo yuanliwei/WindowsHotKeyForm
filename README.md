@@ -11,5 +11,6 @@
  - 连按两次快捷键显示窗口
  - 开机自启动
  - 取消开机自启动
+
 ## 程序下载地址
  - https://github.com/yuanliwei/picture/blob/master/WindowsHotKeyForm.exe
