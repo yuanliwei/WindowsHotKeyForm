@@ -51,10 +51,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>AA9504CAF9A2B3AAB2F9A5B0782D9D75D1ADE233</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>6C815C5265FD3A2EBDE888E8811F153BEAF98D68</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>WindowsHotKeyForm_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>WindowsHotKeyForm_1_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
@@ -72,6 +72,9 @@
   <PropertyGroup>
     <ApplicationIcon>tubiao.ico</ApplicationIcon>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -81,7 +84,6 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
@@ -121,6 +123,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="WindowsHotKeyForm_1_TemporaryKey.pfx" />
     <None Include="WindowsHotKeyForm_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>

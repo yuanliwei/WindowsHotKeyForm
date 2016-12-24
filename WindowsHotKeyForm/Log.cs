@@ -37,11 +37,20 @@ namespace WindowsHotKeyForm
         private static void write(string msg)
         {
             Console.WriteLine(msg);
-            FileStream fs = new FileStream(logPath, FileMode.Append);
-            StreamWriter sw = new StreamWriter(fs, Encoding.Default);
-            sw.WriteLine(msg);
-            sw.Close();
-            fs.Close();
+            if (logPath == null) return;
+            try
+            {
+                FileStream fs = new FileStream(logPath, FileMode.Append);
+                StreamWriter sw = new StreamWriter(fs, Encoding.Default);
+                sw.WriteLine(msg);
+                sw.Close();
+                fs.Close();
+            }
+            catch (Exception)
+            {
+                logPath = null;
+            }
+
 
         }
     }
